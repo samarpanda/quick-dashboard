@@ -7,7 +7,8 @@ Quick monitoring dashboard using [atlasboard](http://atlasboard.bitbucket.org/)
 Start the application by the below command and view it in browser by [http://localhost:3000](http://localhost:3000)
 
 ```shell
-npm start
+npm install  
+npm start  
 ```
 
 ## TODO:
