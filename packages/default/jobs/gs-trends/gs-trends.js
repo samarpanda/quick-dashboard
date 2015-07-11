@@ -13,7 +13,6 @@
 
 var gst = require('google-search-trends');
 
-
 module.exports = function(config, dependencies, job_callback) {
 
     // ## 1. USE OF DEPENDENCIES ##
@@ -52,7 +51,6 @@ module.exports = function(config, dependencies, job_callback) {
         if(err) {
             var err_msg = err || "ERROR: Couldn't get Google search trends. Report at https://github.com/samarpanda/google-search-trends";
         } else {
-            // console.log(res);
             job_callback(null, {title:config.widgetTitle, result:res});
         }
     });

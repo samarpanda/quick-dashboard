@@ -3,7 +3,7 @@
       "title": false,
       "customJS" : ["jquery.peity.js"],
       "widgets" : [
-          {"row" : 5, "col" : 3, "width" : 3, "height" : 5, "widget" : "search-trends", "job" : "gs-trends", "config": "gst"}
+          {"row" : 5, "col" : 1, "width" : 3, "height" : 5, "widget" : "search-trends", "job" : "gs-trends", "config": "gst"}
       ]
   },
   "config": {

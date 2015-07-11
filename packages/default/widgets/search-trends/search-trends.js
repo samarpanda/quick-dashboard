@@ -9,9 +9,8 @@ widget = {
         }
 
         var result = data.result,
-        		countryResults = result[3];
+        		countryResults = result[3];//India
 
-        console.log(data.result);
         var $ul = $('<ul/>');
         countryResults.forEach(function(str){
         	var $li = $('<li/>');
