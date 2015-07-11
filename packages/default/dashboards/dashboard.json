@@ -3,13 +3,13 @@
       "title": false,
       "customJS" : ["jquery.peity.js"],
       "widgets" : [
-          {"row" : 1, "col" : 1, "width" : 2, "height" : 1, "widget" : "linegraph",    "job" : "google-search-trends",         "config": "sales"},
+          {"row" : 5, "col" : 3, "width" : 3, "height" : 5, "widget" : "search-trends", "job" : "gs-trends", "config": "gst"}
       ]
   },
   "config": {
-  	"google-search" : {
-  		"interval": ,
-  		""
+  	"gst" : {
+  		"interval": 60000,
+  		"widgetTitle": "Google Search Trends"
   	}
-  },
+  }
 }

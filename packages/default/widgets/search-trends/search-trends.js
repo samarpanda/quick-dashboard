@@ -8,6 +8,16 @@ widget = {
             $('h2', el).text(data.title);
         }
 
-        $('.content', el).html(data.text);
+        var result = data.result,
+        		countryResults = result[3];
+
+        console.log(data.result);
+        var $ul = $('<ul/>');
+        countryResults.forEach(function(str){
+        	var $li = $('<li/>');
+        	$li.append(str);
+        	$ul.append($li);
+        });
+        $('.content', el).html($ul);
     }
 };

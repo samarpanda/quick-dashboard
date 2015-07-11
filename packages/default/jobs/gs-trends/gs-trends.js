@@ -11,6 +11,9 @@
  * }
  */
 
+var gst = require('google-search-trends');
+
+
 module.exports = function(config, dependencies, job_callback) {
 
     // ## 1. USE OF DEPENDENCIES ##
@@ -39,7 +42,18 @@ module.exports = function(config, dependencies, job_callback) {
     // This is an example of how to make an HTTP call to google using the easyRequest dependency, 
     // and send the result to the registered atlasboard widgets.
     // Have a look at test/gs-trends for an example of how to unit tests this easily by mocking easyRequest calls
-    dependencies.easyRequest.HTML('http://google.com', function(err, html){
-      job_callback(err, { title: config.widgetTitle, html: html });
+    // dependencies.easyRequest.HTML('http://google.com', function(err, html){
+    //   job_callback(err, { title: config.widgetTitle, html: html });
+    // });
+
+    var logger = dependencies.logger;
+    gst.result(function(err, res){
+
+        if(err) {
+            var err_msg = err || "ERROR: Couldn't get Google search trends. Report at https://github.com/samarpanda/google-search-trends";
+        } else {
+            // console.log(res);
+            job_callback(null, {title:config.widgetTitle, result:res});
+        }
     });
 };
