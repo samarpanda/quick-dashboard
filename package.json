@@ -1,0 +1,24 @@
+{
+  "name": "quick-dashboard",
+  "version": "0.0.1",
+  "description": "Quick monitoring dashboard",
+  "main": "index.js",
+  "dependencies": {
+    "google-search-trends": "0.0.2",
+    "atlasboard": "0.12.0"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/atlasboard start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "=0.12.2"
+  },
+  "keywords": [
+    "dashboard",
+    "server",
+    "monitoring"
+  ],
+  "author": "Samar Panda <samar.panda84@gmail.com> (http://samarpanda.com)",
+  "license": "ISC"
+}
