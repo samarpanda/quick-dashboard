@@ -11,9 +11,12 @@ npm install
 npm start  
 ```
 
+
+
 ## TODO:
 
 1. Concept of dashboard and its components(job, widget, configs)  
 1. Create a new dashboard  
 1. One line command to add a job  
 1. One line command to add a widget  
+1. Add demo link  
